@@ -13,7 +13,7 @@ body{
 .card{
     height: 400px;
     width: 500px;
-    background-image: url();
+    background-image: url('../landscape.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +21,7 @@ body{
     justify-content: center;
     align-items: center;
     filter: grayscale(0.5);
-    color: white;
+    /*color: white;*/
     cursor: pointer;
     transition: 0.3s;
 }
