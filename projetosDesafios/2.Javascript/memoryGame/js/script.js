@@ -1,5 +1,6 @@
 const cards = document.querySelectorAll('.card');
-const trofeu = document.querySelector('.trofeu');
+const trofeu = document.querySelectorAll('.trofeu');
+const animalArray = ["cachorro", "coelho", "coruja", "gato", "rato", "rino"];
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
@@ -17,18 +18,14 @@ function flipCard(){
     }
 
     secondCard = this;
+    checkTrophy();
     hasFlippedCard = false;
     checkForMath();
 }
 
 function checkForMath(){
     if(firstCard.dataset.card === secondCard.dataset.card){
-        
-        if(firstCard.dataset.card === "cachorro"){
-            console.log('aaaa');
-            trofeu.style.visibility = "visible";
-            disableCards();
-        }
+        disableCards();
         return;
     }
     unflipCards();
@@ -70,4 +67,14 @@ cards.forEach((card) => {
 
 function hasClass(elemento, classe) {
     return (' ' + elemento.className + ' ').indexOf(' ' + classe + ' ') > -1;
+}
+
+function checkTrophy(){
+    for(let i = 0; i < trofeu.length; i++){
+        if(firstCard.dataset.card === animalArray[i] && secondCard.dataset.card === animalArray[i]){
+            setTimeout(() => {
+                trofeu[i].style.visibility = "visible";
+            }, 500);
+        }
+    }    
 }
