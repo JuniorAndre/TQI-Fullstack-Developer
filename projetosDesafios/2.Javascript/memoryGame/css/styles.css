@@ -119,4 +119,5 @@ h3{
 .trofeu{
     width: 17%;
     height: 17%;
+    visibility: hidden;
 }
