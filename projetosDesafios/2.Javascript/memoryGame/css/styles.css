@@ -17,6 +17,14 @@ body{
     align-items: center;
 }
 
+.point{
+    margin-left: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
 h1{
     font-family: 'Potta One', cursive;
     left: 50%;
@@ -25,6 +33,7 @@ h1{
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
+    color: #8CDEDE;
 }
 
 h2{
@@ -34,10 +43,12 @@ h2{
     align-items: center;
     margin-top: 15px;
     margin-bottom: 15px;
+    color: #8CDEDE;
 }
 
 h3{
     font-family: 'Potta One', cursive;
+    color: #8CDEDE;
 }
 
 .memory-game{

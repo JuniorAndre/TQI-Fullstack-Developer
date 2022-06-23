@@ -24,11 +24,11 @@ function flipCard(){
 function checkForMath(){
     if(firstCard.dataset.card === secondCard.dataset.card){
         
-        if(firstCard.classList.contains("1")){
+        if(firstCard.dataset.card === "cachorro"){
             console.log('aaaa');
             trofeu.style.visibility = "visible";
+            disableCards();
         }
-        disableCards();
         return;
     }
     unflipCards();
