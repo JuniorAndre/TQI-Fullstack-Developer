@@ -1,7 +1,9 @@
 const cards = document.querySelectorAll('.card');
+const trofeu = document.querySelector('.trofeu');
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
+const cach = document.getElementById('1');
 
 function flipCard(){
     if(lockBoard) return;
@@ -21,6 +23,11 @@ function flipCard(){
 
 function checkForMath(){
     if(firstCard.dataset.card === secondCard.dataset.card){
+        
+        if(firstCard.classList.contains("1")){
+            console.log('aaaa');
+            trofeu.style.visibility = "visible";
+        }
         disableCards();
         return;
     }
@@ -61,3 +68,6 @@ cards.forEach((card) => {
     card.addEventListener('click', flipCard);
 });
 
+function hasClass(elemento, classe) {
+    return (' ' + elemento.className + ' ').indexOf(' ' + classe + ' ') > -1;
+}
