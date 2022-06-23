@@ -12,6 +12,11 @@ body{
     background-color: rgb(54, 109, 109);
 }
 
+.container{
+    display: flex;
+    float: left;
+}
+
 .game{
     justify-content: center;
     align-items: center;
@@ -56,6 +61,8 @@ h3{
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
+    align-items: center;
+    justify-content: center;
 }
 
 .card{
@@ -126,15 +133,35 @@ h3{
 }
 
 .trofeu{
-    width: 17%;
-    height: 17%;
+    width: 80px;
+    height: 80px;
     visibility: hidden;
 }
 
-@media (max-width: 750px){
-    .body{
-        height: 10%;
-        display: none;
-        flex-direction: row-reverse;
+@media (max-width: 700px){
+    .container{
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .memory-game{
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .card{
+        height: 20vh;
+        width: 23vw;
+    }
+}
+
+@media (max-width: 350px){
+    .card{
+        height: 15vh;
+        width: 20vw;
     }
 }
