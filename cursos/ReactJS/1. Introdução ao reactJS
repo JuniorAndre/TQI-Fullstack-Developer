@@ -58,7 +58,7 @@ Renderização
 raiz, então tudo que está retornando é um nó
 - O DOM é virtual, então não vai renderizar toda a estrutura HTML novamente
 - React pensa em como a interface deve estar a cada momento ao invés de 
-alterá-la com o tempo, o que faz ter ganho de performance e evita uam série
+alterá-la com o tempo, o que faz ter ganho de performance e evita uma série
 de erros
 
 
