@@ -1,0 +1,205 @@
+Introdução ao ReactJS
+
+1. ReactJS
+
+- Biblioteca javascript para criar interface de usuário
+- Versão 16.8.6 na gravação do vídeo
+- Criado em 2011 por Jordan Walke no facebook, baseado no XHP que é um 
+framework para criação de HTML no PHP
+- Foi utilizado no mural de notícias do facebook
+- Em 2012 foi utilizado no intagram, em 2013 foi anunciado para open source,
+em 2015 foi criado o react native e UWP (Universal Windows Plataform)
+- É uma biblioteca e não um framework, a principal função é a criação da 
+interface para o usuário
+
+- React é uma linguagem declarativa, está procupado apenas com o que é exibido na
+interface do usuário e é baseado em componentes
+- Não é imperativa, que se preocupa em passos que a aplicação tomou para chegar a
+um resultado
+
+
+Para instalar ReactJS
+
+- abrir gitbash
+npm init
+npm install --save react@16.8.6 react-dom@16.8.6 react-scripts@3.0.1
+
+
+JSX
+
+- É uma linguagem de marcação que tem uma estrutura HTML e o poder do 
+javascript dentro dele, podendo executar funções e variáveis
+- React não separa tecnologias colocando marcação em arquivos separados,
+mas separa conceitos e mantém o código pouco acoplado chamando de componentes
+- Não é obrigatório usar JSX
+- É uma Sintax Suggar para React.createElement
+- O browser não interpreta o JSX, para isso é preciso um transpilador para
+que a aplicação possa entender o código. O mais utilizado é Babel
+
+Exemplo: (É uma função)
+function primeiroJSX(){
+    return{
+        <div>
+            André
+        </div>
+    }
+}
+
+para executar:
+{primeiroJSX()}
+
+OBS: Para começar o projeto é preciso:
+npm start
+
+
+Renderização
+
+- React DOM é o que vai renderizar elementos no react, que é feita em nós
+raiz, então tudo que está retornando é um nó
+- O DOM é virtual, então não vai renderizar toda a estrutura HTML novamente
+- React pensa em como a interface deve estar a cada momento ao invés de 
+alterá-la com o tempo, o que faz ter ganho de performance e evita uam série
+de erros
+
+
+Componentes e props
+
+- Componentes são as peças, como menu, botão, etc..
+- Props são parametros para vários componentes
+- Componentes podem trabalhar como função ou classe(protótipo)
+- Composição e extração
+
+
+Estado e ciclo de vida do react
+
+- Inicialização, Montagem, Atualização e Desmontagem
+- Inicialização:
+    Props e state
+-Montagem:
+    ComponentWillMount
+    render
+    componentDidMount
+- Atualização:
+    props:
+        componentWillReceiveProps
+        shouldComponentUpdate
+            if yes:
+            componentWillUpdate
+            render
+            componentDidUpdate
+    state:
+        shouldComponenteUpdate
+            if yes:
+            componentWillUpdate
+            render
+            componentDidUpdate
+- Desmontagem:
+    componentWillUnmount
+
+- Nenhum componente pai ou filho devem saber se outro componente possui
+estado ou não
+- O estado é apenas local ao componente e caso seja necessário enviar 
+atributo para outro então é feito via props
+
+
+Ecossistema (bibliotecas)
+
+React Router
+Redux
+Material Universal
+Ant-design
+Storybook
+Gatsby
+Jest
+React i18n Next
+
+
+
+2. Webpack
+
+- É um module bundler (um empacotador de módulos para aplicações JS)
+- Gera bundler que será utilizado no HTML, em ES5
+- Bundler é um arquivo final onde o webpack empacota os módulos dentro de 
+um único arquivo
+- Suporta: Fontes, css, imagens, html, js, plugins
+
+
+Configuração
+- Principais conceitos: 
+    Entry: Utilizando grafo, o Webpack precisa de um ponto de entrada
+        para buscar todos os modulos e dependências
+    Output: É para determinar quais são os bundlers que o Webpack irá emitir
+    Loaders: É para permitir que o Webpack gerencie arquivos que não são JS
+    Plugins: Plugins podem ser utilizados para otimização de pacotes, minificação,
+    injeção de scripts e muito mais
+    Mode: Utilizados para abordagem de configuração zero. É possível configurar
+    módulos como production, development ou none
+        Production trás otimizações internas
+        Development é executado com três plugins: UglifyJsPlugin, 
+        ModuleConcatenationPlugin e NoEmitOnErrorsPlugin
+
+
+# Para criar arquivo webpack.config.js :
+
+npm i -D webpack webpack-cli
+
+"build": "webpack --mode production"
+
+npm i @babel/core babel-loader @babel/preset-env 
+@babel/preset-react --save-dev
+
+
+# Para criar arquivo .babelrc
+
+{
+    "presets":[
+        "@babel/preset-env"
+    ]
+}
+
+
+# Instalar o react DOM:
+
+npm i react react-dom
+npm i -D babel-preset-react
+
+{
+    "presets":[
+        "@babel/preset-env".
+        "@babel/preset-react"
+    ]
+}
+
+
+# Criar um Dev Server
+
+npm i -D webpack-dev-server
+
+"scripts": {
+    "start:dev": "webpack-dev-server"
+}
+
+
+EsLint
+
+- Correção de código
+
+configuração:
+
+npm install --save-dev eslint babel-eslint eslint-plugin-react eslint-watch
+
+
+
+3. Conceitos aplicados aos tipos de dados e condições da biblioteca
+
+
+Renderização condicional
+
+- No react, você pode criar componentes distintos que encapsulam o comportamento
+que você precisa. Então, você pode renderizar apenas alguns dos elementos,
+dependendo do estado da sua aplicação.
+- Variáveis de elementos, If inline com o operador lógico &&,
+If-else inline com operador condicional, e Evitando que um componente
+seja renderizado
+
+
