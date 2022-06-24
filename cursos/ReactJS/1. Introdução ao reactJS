@@ -203,3 +203,30 @@ If-else inline com operador condicional, e Evitando que um componente
 seja renderizado
 
 
+Listas e chaves
+
+Renderizando múltiplos componentes
+Componente de lista básico
+Chaves
+Extraindo componentes com chaves
+Chaves devem ser únicas apenas entre elementos irmãos
+
+
+Manipulando eventos
+
+- Manipular eventos em elementos react é muito semelhante a manipular eventos
+em elementos do DOM
+- Algumas diferenças são:
+    * Eventos em react são nomeados usando camlcase ao invés de letra minúsculas
+    * Com o JSX você passa uma função como manipulador de eventos ao invés de um 
+    texto
+
+
+Pensando do jeito React
+
+Comece com um Mock
+Separe a UI em uma hierarquia de componentes
+Crie uma versão estática em react
+Identifique a representação mínima (mas completa) do state da UI
+Identifique onde o state deve ficar
+Adicione o fluxo de dados inverso
