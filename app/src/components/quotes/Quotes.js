@@ -1,4 +1,5 @@
 import './Quotes.css';
+import {string} from 'prop-types';
 
 export const Quotes = ({ quote, speaker }) => {
     return (
@@ -9,3 +10,8 @@ export const Quotes = ({ quote, speaker }) => {
         </div>
     );
 };
+
+Quotes.protTypes = {
+    quote: string,
+    speaker: string
+}
