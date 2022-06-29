@@ -6,7 +6,7 @@ function App() {
     <div className="Content">
       <p>Naruto </p>
       <button> Jutsu</button>
-      <NarutoImg src={naruto} alt="Imagem do naruto"/>
+      <img className="NarutoImg" src={naruto} alt="Imagem do naruto"/>
     </div>
   );
 }
