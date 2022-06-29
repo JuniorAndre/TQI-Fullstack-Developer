@@ -1,7 +1,8 @@
-export const Quotes = () => {
+export const Quotes = ({ quote, speaker }) => {
     return (
         <div>
-            <p>Naruto</p>
+            <p>{quote}</p> 
+            <p>{speaker}</p>
             <button> Jutsu</button>
         </div>
     );
