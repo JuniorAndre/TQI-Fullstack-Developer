@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import naruto from './Naruto.png';
 import './App.css';
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <div className="Content">
       <p>Naruto </p>
       <button> Jutsu</button>
-      <img src={logo} alt="Logo"/>
+      <img src={naruto} alt="Imagem do naruto"/>
     </div>
   );
 }
