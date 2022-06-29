@@ -1,3 +1,5 @@
+import './Quotes.css';
+
 export const Quotes = ({ quote, speaker }) => {
     return (
         <div>
