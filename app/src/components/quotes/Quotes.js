@@ -1,8 +1,8 @@
 export const Quotes = () => {
-    return{
+    return (
         <div>
             <p>Naruto</p>
             <button> Jutsu</button>
         </div>
-    };
+    );
 };
