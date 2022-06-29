@@ -1,6 +1,6 @@
 import naruto from './Naruto.png';
 import './App.css';
-import { Quotes } from './components/quotes';
+import { Quotes } from './components/quotes/Quotes';
 
 function App() {
   return (
