@@ -6,7 +6,10 @@
   align-items: center;
 }
 
-
+NarutoImg{
+  max-width: 50vw;
+  align-self: flex-end;
+}
 
 .App {
   text-align: center;
