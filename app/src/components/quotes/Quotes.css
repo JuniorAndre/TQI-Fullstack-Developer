@@ -1,4 +1,9 @@
-p{
-    font-size: 60em;
+.quote{
+    font-size: 2em;
     margin: 0;
+}
+
+.speaker{
+    text-align: right;
+    margin-bottom: 50px;
 }

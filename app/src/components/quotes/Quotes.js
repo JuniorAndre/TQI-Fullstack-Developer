@@ -3,8 +3,8 @@ import './Quotes.css';
 export const Quotes = ({ quote, speaker }) => {
     return (
         <div>
-            <p>{quote}</p> 
-            <p>- {speaker}</p>
+            <p className="quote">{quote}</p> 
+            <p className="speaker">- {speaker}</p>
             <button> Jutsu</button>
         </div>
     );
