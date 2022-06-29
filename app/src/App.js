@@ -5,7 +5,7 @@ import { Quotes } from './components/quotes';
 function App() {
   return (
     <div className="Content">
-      <Quotes quote={[test]} speaker={'Naruto'} />
+      <Quotes quote={["oi"]} speaker={'Naruto'} />
       <img className="NarutoImg" src={naruto} alt="Imagem do naruto"/>
     </div>
   );
