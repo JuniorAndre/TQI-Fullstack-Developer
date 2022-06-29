@@ -12,6 +12,5 @@ export const Quotes = ({ quote, speaker }) => {
 };
 
 Quotes.protTypes = {
-    quote: string,
-    speaker: string
+    p: string
 }
