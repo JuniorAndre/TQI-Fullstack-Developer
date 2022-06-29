@@ -6,7 +6,7 @@ test('renders the app with button, a quote and a button', () => {
 
   const buttonEl = screen.getByRole('button');
   const imageEl = screen.getByRole('img');
-  const textEl = screen.getByRole('p');
+  const textEl = screen.getByText(/Naruto/);
 
   expect(buttonEl).toBeInTheDocument();
   expect(imageEl).toBeInTheDocument();
