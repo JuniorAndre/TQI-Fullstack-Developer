@@ -14,5 +14,5 @@ export const Quotes = ({ quote, speaker, onUpdate }) => {
 
 Quotes.propTypes = {
     p: string,
-    onUpdate: func
+    Button: func
 };
