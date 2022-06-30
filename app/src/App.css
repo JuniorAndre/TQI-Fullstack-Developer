@@ -1,6 +1,6 @@
 .body {
   background: url(./bgImg.jpg) center no-repeat;
-  /*block-size: cover;*/
+  block-size: cover;
   color: #332c36;
   padding: 0;
   margin: 0;
