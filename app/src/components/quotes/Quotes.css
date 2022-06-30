@@ -14,3 +14,19 @@
     flex-direction: column;
     align-items: center;
 }
+
+Button{
+    background: #FFA500;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    font-family: 'New Tegomin', serif;
+    cursor: pointer;
+    box-shadow: #333 3px 3px;
+}
+
+Button:hover {
+    background: #a40000;
+}

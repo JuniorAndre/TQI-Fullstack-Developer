@@ -1,17 +1,18 @@
 import './Quotes.css';
-import {string} from 'prop-types';
+import { string, func } from 'prop-types';
 import { Button } from '../button';
 
-export const Quotes = ({ quote, speaker }) => {
+export const Quotes = ({ quote, speaker, onUpdate }) => {
     return (
         <div>
             <p className="quote">{quote}</p> 
             <p className="speaker">- {speaker}</p>
-            <Button> Jutsu</Button>
+            <Button onClick={onUpdate}>Jutsu</Button>
         </div>
     );
 };
 
-Quotes.protTypes = {
-    p: string
-}
+Quotes.propTypes = {
+    p: string,
+    onUpdate: func
+};
