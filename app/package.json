@@ -37,7 +37,8 @@
   "devDependencies": {
     "@testing-library/react": "^13.3.0",
     "jest": "^28.1.2",
-    "msw": "^0.42.3"
+    "msw": "^0.42.3",
+    "styled-components": "^5.3.5"
   },
   "msw": {
     "workerDirectory": "public"
