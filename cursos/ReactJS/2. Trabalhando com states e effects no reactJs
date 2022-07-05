@@ -1,0 +1,25 @@
+Trabalhando com States e Effects no ReactJs
+
+Hooks
+- É gancho em inglês, é uma função que se engancha no componente e vai ser 
+executada junto com o componente
+- useState e useEffect são Hooks
+
+
+useState 
+- utiliza um estado inicial, e uma função para trocar estados
+- retorna um vetor
+
+Ex:
+const [value, setValue] = useState(1);
+
+
+useEffect
+- Um efeito colateral que acontece se mudar algo na variável no estado que
+ele está vigiando
+
+Ex:
+const useEffect(() => {
+    document.getElementById("moeda").innerHTML = 2.00 * value;
+},[value]);
+

@@ -1,0 +1,181 @@
+Desenvolvimento de aplicações para internet com reactJs
+
+Trabalhando com estilos em elementos e componentes
+- Inline: dentro do .js utilizando classes
+- Classes: Fora do .js utilizando uma folha de estilo e implementando
+- CSS in JS: Utilizando componente de estilo - styled-components 
+npm install --save styled-components 
+
+Stateful vs stateless
+- Stateful: usa estados
+- Stateless: não usa estados
+- A nomenclatura foi atualizada: Class Components e Function Components
+- Com hooks, os estados são manipuláveis em function components
+
+Stateful
+- Possui gerenciamento de estados no componente
+- Construídos usando classes em JS
+- Possui os estados e ciclo de vida do reactJs
+
+Stateless
+- Não possui gerenciamento de estados no componente
+- Contruídos usando funções em JS
+
+Introdução em formulários no reactJs
+- Formulários mantêm um estado interno
+- Em HTML, <input>, <textarea> e <select> possuem um estado interno
+- Em react, podemos controlar o estado usando state e setState
+
+Componente controlado
+- Tanto select, input ou textarea aceitam um atributo value
+- Podemos mudar esse valor usando o atributo onChange
+
+Componente não controlado
+- A tag input é read-only
+
+
+
+Introdução ao flux
+- Flux é uma arquitetura criada pelo facebook para comunicação entre componentes
+- É um padrão de projeto para tráfego de dados de maneira unidirecional
+Action: é como um telégrafo - formata a mensagem a ser enviada
+Dispatcher: é como um telefonista - ele sabe todos os callbacks para diferentes Stores
+Store: É como um gerente - guarda todos os estados e altera cada um, e somente pela Store
+View: É como um gerente intermédiario - que recebe as notificações da store e passa os dados 
+para as visões abaixo dela
+
+Arquitetura Flux
+- Diversas implementações como: Redux, Reflux, Mobx, Vuex, NgRx/store
+- Servem para comunicação entre componentes
+- Centralizam a informação
+- Flux libraries are like glasses: you'll know when you need them
+
+Redux
+- Criado por Dan Abramov e Andrew Clark em 2015
+- É uma implementação de flux, embora possui algumas diferenças
+- 3 princípios:
+    Uma única Store
+    State é read-only
+    Mudanças são feitas com pure functions
+
+Action no Redux
+- São como o flux
+- Diferença: Actions não enviam a action em si para o Dispatcher
+- Retornam um objeto de action formatado
+
+Store
+- Em flux: diversas Stores
+- Em redux: uma única store
+- A store aqui cuida de toda a árvore de estados
+- Os reducers que cuidam de descobrir qual o estado que muda
+
+Reducers
+- Em redux não há dispatcher (simplifica e divide o trabalho da store)
+- A store se conecta ao root reducer. que divide os estados em pequenos reducers
+para descobrir como lidar com esse estado
+- Os estados aqui são imutáveis
+
+Views
+- Em react, adiciona na camada de view 3 novos conceitos para conectar a view à store:
+1. Provider
+2. connect()
+3. selector
+
+Instalando Redux
+npm install react-redux
+npm install --save-dev redux-devtools
+Obs:
+redux devtools tem que instalar no google chrome
+
+
+
+Comunicação avançada entre aplicações
+- APIs HTTP: servem para conectar a um ou mais servidores HTTP
+    GET, POST, DELETE, PUT
+- Fetch API
+- Axios
+
+Fetch API
+- Nativa do browser
+- Oferece uma alternativa ao XMLHttpRequest() e jQuery.ajax()
+- Suporte a Service Workers
+- Algumas diferenças são:
+    - Não envia nem recebe cookies (precisa definir a opção credentials)
+    - Não rejeita o status do erro HTTP
+
+Axios
+- Lib de HTTP API
+- Cross-browser
+- Pode monitorar o progresso de um request
+- Melhor tratamento de erros
+- Melhor teste
+
+instalar Axios
+yarn add axios
+
+Imutabilidade
+- Uma vez criada, uma coleção não pode ser alterada
+- Novas coleções podem ser criadas a partir de uma coleção anterior e uma
+mutação (setter) como um conjunto
+- Novas coleções são criadas usando o máximo possível da estrutura original,
+reduzindo a cópia e aumentando a performance
+- Benefícios: Performance, programação mais simples, Debugging mais simples
+(detecção de mudanças)
+- Em react, ganha em performance é possível usando shouldComponentUpdate ou
+React.PureComponent
+
+Redux + Rest 
+- Suponha um sistema de notificação ou um sistema de logging
+- Você precisa manter a sincronia, independente da tela onde estiver
+- Uma maneira de resolver fácil seria armazenar os dados do serviço no Redux
+
+Middlewares
+- Provê uma camada entre disparo de uma ação e o momento que ela atinge o reducer
+- Utilizados para uma variedade de funções, entre elas chamadas de APIs de serviço
+- Imagine um sistema de log, onde toda action disparada de um sistema é impressa com
+o log na tela
+
+Redux Thunk
+- Um trunk é uma função que chama outra função
+
+
+
+Conceitos aplicados a qualidade de código e automação de testes em react
+
+TDD: Test-Driven Development
+- Antecipar erros a nível de Desenvolvimento 
+- Teste escrito antes da funcionalidade
+- Não descarta a presença de um tester
+1. Escrever um teste que falha
+2. Fazer o código funcionar
+3. Eliminar redundância
+- Teste unitário: Testar unidades da aplicação como - função, componente, serviço, página
+- Teste End-to-End (E2E) - testa ponta a ponta, testa o fluxo de código
+Bibliotecas: Jest, React-testing-library, shalow, enzyme, chai, mocha, selenium, puppeteer
+Para usar adiciona-se:
+yarn add --dev @testing-library/react
+yarn add --dev @testing-library/jest-dom/extend-expect
+
+BDD: Behavior-Driven Development
+- Teste de especificação
+- Une especificação, teste automatizado e premissa de teste (documento de teste)
+- Sintaxe de steps para definir cenários
+- Descreve cada funcionalidade por feature (caso de uso)
+Bibliotecas: Jest-cucumber e Chai
+Para adicionar:
+yarn add --dev jest-cucumber
+
+Debbugging
+- Depuração é o processo de encontrar e reduzir defeitos em um software
+- Ferramentas: Chorme Devtools, Redux Devtools, React Devtools
+
+Tratamento de erro
+- Resiliência de SW e segurança
+- Tratamento em componentEs:
+    Em Js usamos PropTypes
+    Podemos usar linguagens tipadas como TypeScript, definindo interfaces
+
+
+
+
+
