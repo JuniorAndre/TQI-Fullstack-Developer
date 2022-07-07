@@ -1,0 +1,26 @@
+Trabalhando com as suas primeiras tabelas
+
+Modelo relacional
+- O modelo relacional surge na década de 60, proposto por Edgar Codd
+- As tabelas são compostas por entidades, atributos e chaves
+- As chaves permitem o relacionamento entre os dados
+
+Porque usar tabelas?
+- Dados organizados de forma estruturada
+- Dados atômicos: Dados únicos que em nenhum lugar existe igual
+- Consulta e manipulação de dados simplificados
+
+Ferramentas 
+- MySQL - banco de dados gratuito
+- phpMyAdmin - sistema gerenciador de banco de dados
+- XAMPP
+
+Criando a tabela
+- CREATE TABLE
+- Tipos: INT, VARCHAR, DATETIME
+CREATE TABLE pessoa (nome varchar(20), nascimento date);
+
+Inserindo dados
+- INSERT INTO
+- Indicar as colunas que serão preenchidas e os respectivos valores
+INSERT INTO pessoas (nome, nascimento) VALUES ("Nathally","1990-05-22");
