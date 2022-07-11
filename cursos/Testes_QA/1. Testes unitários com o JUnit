@@ -1,0 +1,42 @@
+Testes unitários com o JUnit
+
+
+O que é um teste unitário?
+- Também chamado de testes de unidade
+- Testar a menor unidade de código possível
+- Unidade: função, método, classes
+- Testar uma aplicação na sua menor parte
+- Geralmente escrito em tempo de desenvolvimento
+
+Porque escrever testes unitários?
+- Situações no desenvolvimento de software que mostram a importância
+de testes unitários:
+    - Compreender o código fonte
+    - Corrigir bugs com segurança
+    - Refatorar código sem introduzir bugs
+    - Entregar com segurança uma nova feature
+- Podemos ainda falar sobre:
+    - Pirâmide de testes
+    - Testes unitários como métrica de Qualidade (confiabilidade)
+    - Cobertura de testes
+    - Automação na execução de testes
+    - Cultura de agilidade
+
+História do JUnit
+- Framework open source para criação de testes unitários criado por Erich Gamma e Kent Beck
+- Kent Beck (TDD)
+- Erich Gamma (Gang of Four, Design Patterns)
+- Versão 5 do JUnit trabalha com JUnit Plataform, JUnit Jupiter e JUnit Vintage
+
+Boas práticas no JUnit
+- Preocupe-se com os nomes
+- Preocupe-se com a facilidade de leitura
+- Procure escrever o código de teste o mais próximo do código de execução
+- Veja um pouco sobre TDD
+- Busque padronizar -> Nomenclatura
+- Testes precisam ser determinísticos
+- Economizar tempo automatizando
+- Ferramentas de cobertura de código (Jacoco)
+- Automatize a execução dos seus testes
+
+

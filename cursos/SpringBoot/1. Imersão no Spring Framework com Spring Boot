@@ -1,0 +1,51 @@
+Imersão no Spring Framework com Spring Boot
+
+Spring Framework
+- Framework open source desenvolvido para a plataform Java baseado nos padrões de projetos
+de inversão de controle e injeção de dependência.
+- Sua estrutura é composta por módulos afins de reduzir a complexidade no desenvolvimento 
+de aplicações simples ou corporativa.
+
+Spring vs Java EE
+- Olhando um pouco a história, há muito tempo o Java EE era realmente muito complicado e nem era
+necessário entrar em discussão, usar o Spring era um caminho mais simples e fácil de evoluir. Aí 
+chegou a versão 5 do Java EE e a discussão voltou a ficar um pouco quente.
+
+Inversão de controle
+- Inversion of Control ou IoC, trata-se do redirecionamento do fluxo de execução de um código retirando
+parcialmente o controle sobre ele e delegando-o para container. O principal propósito é minimizar o acoplamento do código.
+
+Injeção de dependências
+- Injeção de dependência é um padrão de desenvolvimento com a finalidade de manter baixo o nível
+de acoplamento entre módulos de um sistema.
+
+Beans
+- Objeto que é instanciado (criado), montado e gerenciado por um container através do princípio 
+da inversão de controle.
+
+Scopes
+- Escopos (padrões de design)divididos em:
+ Spring Bean Scopes: Singleton, Prototype
+ HTTP: Request, Session, Global
+
+Singleton
+- O container do Spring IoC define apenas uma instância do objeto.
+
+Prototype
+- Será criado um novo objeto a cada solicitação ao container.
+
+HTTP - Request
+- Um bean será criado para cada requisição HTTP.
+
+HTTP - Session
+- Um bean será criado para a sessão de usuário.
+
+HTTP - Global
+- Ou Application Scope cria um bean para o ciclo de vida do contexto da aplicação.
+
+Autowired
+- Uma anotação (indicação) onde deverá ocorrer uma injeção automatica de dependência.
+    byName: É buscado um método set que corresponde ao nome do Bean.
+    byType: É considerado o tipo da classe para a inclusão do bean.
+    byConstructor: Usamos o constructor para incluir a dependência.
+

@@ -24,3 +24,35 @@ Inserindo dados
 - INSERT INTO
 - Indicar as colunas que serão preenchidas e os respectivos valores
 INSERT INTO pessoas (nome, nascimento) VALUES ("Nathally","1990-05-22");
+
+Selecionando dados
+- SELECT
+- Definindo os campos selecionados
+SELECT * FROM pessoas
+
+Atualizando dados
+- UPDATE
+- Alterando as informações na tabela
+UPDATE pessoas SET nome = "Nathally Souza"
+
+Cláusula WHERE
+- WHERE
+- Define uma condição para nosso comando
+UPDATE pessoas SET nome = "Nathally Souza" WHERE id=1;
+
+Delete
+- DELETE
+- Deletar informações selecionadas
+DELETE FROM pessoas WHERE id=1
+
+Ordenando dados
+- ORDER BY
+- Ordena a forma como as informações são exibidas
+SELECT * FROM pessoas ORDER BY nome
+SELECT * FROM pessoas ORDER BY nome DESC  => (Decrescente)
+
+Agrupando dados
+- GROUP BY
+- Agrupa as informações de acordo com o critério selecionado
+SELECT COUNT(qtd), GENERO FROM pessoas GROUP BY genero
+

@@ -1,0 +1,30 @@
+JPA com Hibernate
+
+JDBC
+- Java DataBase Connectivity
+- É um conjunto de classes e interfaces (API) escritas em Java que fazem o envio
+de instruções  SQL para qualquer banco de dados relacional.
+
+ORM
+- Object Relational Mapper
+= É uma técnica de mapeamento objeto relacional que permite fazer uma relação dos
+objetos com os dados que os mesmos representam.
+
+JPA
+- Java Persistence API
+- É uma API padrão da linguagem Java que descreve uma interface comum para frameworks
+de persistência de dados. A JPA define um meio de mapeamento objeto-relacional para objetos
+Java simples e comuns.
+
+JPA e Hibernate é a mesma coisa?
+- Hibernate é uma tecnologia, que foi a primeira tecnologia de ORM para Java. Com a popularização
+da mesma, a Oracle acabou por convidar os criadores do Hibernate para construírem o JPA que é uma
+especificação, indicando como deve ser implementado qualquer framework ORM para padronizar a forma
+com que o desenvolvedor final trabalha com eles. Além do Hibernate um outro framework de JPA é o EclipseLink.
+
+Porque utilizar o Hibernate?
+- Faz mapeamento das tabelas do banco de dados com classes
+- Possui um pacote de classes uteis que facilitam o processo de interação com o Banco de dados, muitas
+das vezes não é necessário utilizar queries.
+- No caso de uma possível migração de banco de dados, não será necessário alterar nada no código.
+
