@@ -1,0 +1,35 @@
+Desenvolvimento back-end com NodeJS
+
+PostgreSQL
+- É um banco de dados relacional
+- Open-source
+- Suporte a funcionalidades avançadas:
+    Tipo UUID
+    PostGLS (geolocalização)
+    Unaccent (remover acentos na pesquisa)
+- Criação de tabelas
+- Inserção de dados
+- Consulta de dados
+
+Utilizando o NodeJS com Postgres 
+Driver de conexão
+- Para conectar a um banco utilizamos um driver (pg)
+- Exemplo de criação de tabelas
+- Exemplos de queries
+
+ORM - Mapeamento objeto-relacional
+- Um framework que facilita no mapeamento do objeto com a parte de relacionamento no banco de dados 
+- Exemplos:
+    Hibernate (Java)
+    DataMapper (Ruby)
+    Sequelize (Node)
+
+Sequelize
+- Compatível com os bancos de dados:
+    MySQL
+    Sqlite
+    PostgreSQL
+    SQL Server
+- Versátil
+- Robusto
+

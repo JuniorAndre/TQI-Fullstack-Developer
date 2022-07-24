@@ -49,3 +49,57 @@ Autowired
     byType: É considerado o tipo da classe para a inclusão do bean.
     byConstructor: Usamos o constructor para incluir a dependência.
 
+
+
+Conhecendo o SpringBoot
+- Enquanto que o Spring Framework é baseado no padrão de injeção de dependências, o 
+Springboot foca na configuração automática.
+- Dado que a maior parte das configurações necessárias para o início de um projeto são 
+sempre as mesmas, por que não iniciar um projeto com todas estas configurações já definidas?
+
+Antes do Springboot
+- Os desafios eram:
+    Dependência individual
+    Verbosidade
+    Incompatibilidade de versões
+    Complexidade de gestão
+    Configurações complexas e repetitivas
+
+Starters
+- Benefícios:
+    Coesão
+    Versões compatíveis
+    Otimização do tempo
+    Configuração simples
+    Foco no negócio
+- Listagens de alguns Starters
+    Spring-boot-Starter
+        data-jpa: Integração ao banco de dados via JPA - Hibernate
+        data-mongodb: Interação com banco de dados MongoDB
+        web: Inclusão do container TomCat para aplicações REST
+        web-services: Webservices baseados na arquitetura SOAP
+        batch: Implementação de JOBs de processos
+        test: Disponibilização de recursos para testes unitários como JUnit
+        openfeign: Client HTTP baseado em interfaces
+        actuator: Gerenciamento de monitoramento da aplicação
+
+ORM
+- Object-Relacional Mapping é um recurso para aproximar o paradigma da orientação
+a objetos ao contexto de banco de dados Relacional
+- O uso de ORM é realizado através do mapeamento de objeto para uma tabela por uma 
+biblioteca ou Framework
+
+JPA 
+- É uma especificação baseada em interfaces, que através de uma framework realiza 
+operações de persistência de objetos em Java.
+- Hibernate, Eclipse Link, Top Link, Open JPA
+
+Mapeamento
+- Vamos conhecer os aspectos das anotações de mapeamento do JPA
+    Identificação
+    Definição
+    Relacionamento
+    Herança
+    Persistência
+
+Entity Manager

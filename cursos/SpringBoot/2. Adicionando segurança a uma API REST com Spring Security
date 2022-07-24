@@ -1,0 +1,6 @@
+Adicionando segurança a uma API REST com Spring Security
+
+Spring Security
+
+- É apenas um grupo de filtros de servlet que ajudam adicionar autenticação e autorização ao seu aplicativo Web
+

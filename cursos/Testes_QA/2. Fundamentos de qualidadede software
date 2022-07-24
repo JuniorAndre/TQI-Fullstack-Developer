@@ -1,0 +1,293 @@
+Fundamentos de qualidadede software
+
+Definindo qualidade
+- NBR/ISO 9000:2005 - grau no qual um conjunto de características inerentes que satisfaz a requisitos
+- Pressman: Qualidade de software é a conformidade a requisitos funcionais e de desempenho que foram
+explicitamente declarados, a padrões de desenvolvimento claramente documentados, e a características 
+implícitas que são esperadas de todo software desenvolvido por profissionais.
+- Aspectos importantes: 
+    # requisitos de software são a base para medir qualidade
+    # padrões especificados definem conjunto de critérios de desenvolvimento
+    # existem requisitos implícitos que não são mencionados que afetam diretamente a qualidade
+
+Percepções de qualidade
+- Visão transcendental: Qualidade é reconhecida através de experiência, mas sem uma definição ou metrificação.
+- Visão do usuário: É personalizado de acordo com a necessidade do usuário.
+- Visão de manufatura: Qualidade é relacionada com conformidade aos requerimentos.
+- Visão de produto: Produto com boas propriedades internas metrificáveis terá boas qualidade externas.
+- Visão baseada em valor: Representa o custo-benefício na visão do cliente
+
+
+As normas e padrões de qualidade
+- Normas são documentos publicados por organizações profissionais que objetivam padronizar determinadas
+atividades, processos, produtos, etc..
+- Instituições importantes: IEEE, ISO, IEC..
+
+Medindo qualidade
+- Stakeholders -> requisitos e padrões -> Processo de software(Processo de desenvolvimento e produto de software) -> Software com qualidade
+- Qualidade interna: totalidade das características do software do ponto de vista interno
+- Métricas internas: podem ser aplicadas a um produto de software não executável, como especificações e código-fonte.
+Servem para avaliar a qualidade do produto antes do produto se tornar executável. São também indicadores de atributos externos.
+- Qualidade externa: Totalidade das características do produto do ponto de vista externo, incluindo requisitos derivados das
+necessidades do usuário e dos requisitos de qualidade em uso.
+- Métricas externas: Utilizam medidas de um produto de software derivadas de medidas do comportamento do sistema através de testes,
+operação e observação do produto.
+- Qualidade em uso: visão da qualidade do ponto de vista do usuário, em um ambiente e contexto de uso específicos.
+- Métricas de qualidade em uso: medem o quanto um produto atende às necessidades de um usuário especificado.
+
+Processos de gerenciamento de qualidade de software
+- Conjunto de todos os processos que garantem que os produtos, serviços e o ciclo de vida vão de encontro com os objetivos da qualidade
+e forma a alcançar a satisfação do usuário.
+- Atividades do gerenciamento:
+    Planejamento de qualidade
+    Garantia de qualidade
+    Controle de qualidade
+    Melhoria de processos
+
+Planejamento
+- Determinar:
+    -> padrões e processos de qualidades a serem utilizados
+    -> metas específicas de qualidade
+    -> esforço e organização de atividades
+
+Garantia de qualidade
+- Atividades de que definem e avaliam a adequação dos processos de software de forma a prover evidências que
+estabelecem confiança no produto produzido.
+
+Controle de qualidade
+- Examinação de artefatos do projeto para determinar se os padrões acordados estão sendo seguidos
+- Avaliação de produtos intermediários e do produto final
+
+Melhorias de processos
+- Se preocupa com melhorias na eficiência, efetividade e quaisquer características que tenham como meta principal
+a melhoria da qualidade de software.
+
+
+
+Gerenciamento de defeitos
+
+Falando em controle de qualidade
+- Análise estática: avaliação de documentação do software e código-fonte -> métodos formais
+    > Code review
+    > Ferramentas de automação de processos de verificação de código
+    > Análise de histórias e modelagens
+- Análise dinâmica: relacionado a técnicas com o código em execução
+    > Testes
+- Validação X Verificação
+    Verificação: Garantir que o produto está sendo construído corretamente
+    Validação: O produto correto está sendo construído
+
+Caracterizando defeitos
+Rastreamento de defeitos
+- Entendimento do produto e dos tipos de defeitos encontrados
+- Facilitar correção do processo ou do produto
+- Reportar status do produto
+- Alinhamento de revisões pelo time de desenvolvimento
+
+O que é defeito?
+- Genericamente significa qualquer tipo de anomalia encontrada no produto
+- Motivos para erros:
+    > Pressão do tempo
+    > Falha humana
+    > Inexperiência e/ou falta de qualificação
+    > Falta de comunicação
+    > Complexidade de código, modelagem, arquitetura...
+    > complexidade de tecnologia
+    > Condições ambientes inesperadas
+
+Ciclo de vida do bug: do rastreio ao reporte
+- New: Defeito é identificado e cadastrado pela primeira vez
+- Assigned: defeito é atribuído para desenvolvedor avaliar
+- Open: desenvolvedor inicia análise e correção
+- Fixed: Desenvolvedor finaliza correção
+- Pending Retest: Estado de espera para o time de teste
+- Retest: Estado de execução do reteste
+- Verified: Defeito corrigido
+- Reopen: Defeito não-corrigido.
+- Closed: Corrigido + testado + aprovado
+- Duplicate: efeito já encontrado anteriormente
+- Rejected: Defeito não é novo.
+- Deferred: Será corrigido em versões futuras.
+- Not a bug: Quando a anomalia não é de fato um erro depois de analisado
+
+Ferramentas de suporte
+- Bugzilla: gratuito
+- Jira: gratuito e pago
+- Azure devops: pago
+- Asana: gratuito e pago
+- Trello: gratuito e pago
+- entre outros..
+
+
+
+Introdução aos testes de software
+
+Conceitos e objetivos
+- Processo de avaliar e reduzir risco de falhas de software em operação
+- Faz parte do controle de qualidade
+- O processo de teste não diz respeito somente ao ato de executar um teste
+
+Objetivos gerais
+- Evitar defeitos e avaliar produtos de trabalho
+- Verificar cumprimento de requisitos
+- Validar se o produto funciona como o cliente espera
+- Criar confiança no nível de qualidade do objeto testado
+- Redução de riscos
+- Atuar junto ao cliente para tomada de decisões
+
+Teste X depuração
+- A execução de testes pode mostrar falhas causadas por defeitos de software
+- Depuração já é um processo de investigação e correção do erro no processo do
+desenvolvimento do código
+- Essas atividades variam de acrodo com a metodologia utilizada na equipe
+
+Princípios de teste
+1. Teste mostra presença de defeitos e não a ausência
+2. Testes exaustivos são impossíveis
+3. Testes iniciais economizam tempo e dinheiro
+4. Defeitos se agrupam
+5. O mesmo teste não encontra novos defeitos -> atenção com testes de regressão
+6. O teste depende do contexto
+7. Ausência de erros é ilusão
+
+Processo de teste
+- Atividades de teste:
+    Planejamento
+    Monitoramento e controle do teste
+    Análise
+    Modelagem
+    Implementação
+    Execução
+    Conclusão
+
+Planejamento
+- Definir propósitos do teste
+- Definir abordagem do teste de acordo com restrições do contexto
+- Especificar tarefas e estimativas de prazos
+
+Monitoramento e controle do teste
+- Comparação contínua do progresso real com o plano de teste a partir de critérios de avaliação
+de saídas
+- Utilização de relatórios de progresso
+
+Análise
+- Base de teste é analisada de forma a analisar o que testar de acordo com critérios pré-estabelecidos
+- Avaliar os tipos de defeitos que podem ser encontrados
+- Definir e priorizar condições de teste
+
+Modelagem 
+- Responde a pergunta como testar?
+- As condições de teste são elaboradas em casos de teste de alto nível
+- Priorização de casos de teste e conjuntos de casos de teste
+- Verificar infraestrutura necessária e projetar ambiente de teste
+
+Implementação
+- Desenvolver e priorizar procedimentos de teste e possivelmente script automatizados
+- Criar suítes de testes
+- Organização lógica e eficiente da execução dos testes
+- Preparar dados de teste
+
+Execução
+- Conjuntos de testes são executados conforme planejado, seja de forma manual ou automatizada
+- Comparar resultados reais com resultados esperados
+- Analisar anomalias para estabelecer prováveis causadas
+- Reportar e registrar essas anomalias
+- Reteste
+
+Conclusão
+- coletar dados das atividades de testes já concluidas de forma a revisar e consolidar a experiência
+- Criar relatório de resumo de teste
+- Finalizar e arquivar dados e registros dos testes
+- Melhorar maturidade do processo de teste
+
+
+Niveis de teste
+- São grupos de atividades de teste que são organizados e gerenciados juntos com relação ao nível de desenvolvimento
+    > Teste de componentes
+    > Teste de integração
+    > Teste de sistema
+    > Teste de aceite
+
+Testes de componente ou unidade
+- Foco em testar componentes do código de forma independente
+- Importante para: 
+    > Reduzir risco
+    > Verificar requisitos funcionais e não-funcionais
+    > Construir confiança do componente
+    > Encontrar defeitos
+    > Evitar que os defeitos sejam refletidos em níveis mais altos de teste
+
+Testes de integração
+- Foco na integração entre componentes ou comunicação de sistemas
+- Importante para: 
+    > Reduzir risco
+    > Verificar interfaces
+    > Encontrar defeitos nas partes envolvidas e impedir que sejam refletidos em níveis mais altos de teste
+
+Testes de sistema
+- foco nos requisitos de ponta a ponta do sistema
+- Importante para:
+    > Reduzir risco
+    > Validar sistema como um todo
+    > Encontrar defeitos não vistos em níveis mais baixos
+    > Evitar que defeitos se reflitam em produção após aceite do cliente
+
+Testes de aceite
+- Foco nos requisitos de ponta a ponta do sistema do ponto de vista da validação e conformidade com regras de negócio e necessidade do cliente
+- Importante para: 
+    > Reduzir risco
+    > Validar sistema como um todo
+    > Encontrar defeitos não vistos em níveis mais baixos
+    > Evitar que defeitos se reflitam em produção após aceite do cliente
+
+*Tipos de testes*
+- Grupo de atividades de teste destinados a verificar características específicas de um sistema, com
+base em objetivos específicos
+    > Avaliar características funcionais
+    > Avaliar características não funcionais
+    > Avaliar estrutura ou arquitetura de componente/sistema
+    > Avaliar efeitos de alterações em outras partes do código
+
+Teste funcional
+- Avaliação de funções que o sistema deve executar
+- Desenvolvidos a partir de especificações de requisitos, histórias de usuário, casos de uso
+- Os testes funcionais podem ser realizados em todos os níveis de teste
+- Técnicas caixa-preta são bem úteis para avaliação de comportamentos funcionais do sistema
+
+Teste não funcional
+- Avaliação de características não funcionais como usabilidade, eficiência de performance, segurança, etc
+- Também pode ser feito em todos os níveis de teste
+
+Teste de caixa-branca
+- foco em testes com base na estrutura interna do sistema
+    > Código fonte
+    > arquitetura
+    > Fluxo de dados
+- Cobertura de código com testes de unidade ou integração
+
+Teste de mudanças
+- Teste de confirmação: Verificação após defeito ser corrigido
+- Teste de regressão: Verificação de efeitos colaterais nas alterações de um componente do sistema
+
+
+Técnicas de teste
+- Objetivo das técnicas: Auxílio na identificação das condições de teste, casos e seus dados
+- Técnicas:
+    > caixa-preta
+    > caixa-branca
+    > por experiência
+
+Técnicas de caixa-preta
+- Fundamentadas em documentos de requisitos, casos de uso, histórias do usuário, etc
+- São aplicáveis para testes funcionais ou não-funcionais
+- Foco nas entradas e saídas do teste, abstraindo a estrutura interna
+
+Técnicas de caixa-branca
+- Baseadas na estrura interna do objeto de teste
+- Podem ser usadas em todos os níveis de teste
+- Normalmente usada para testes a nível de componente no código-fonte
+
+Técnicas baseadas na experiência
+- Baseada em experiência e intuição de quem testa
+- Pode-se identificar situações não encontradas no métodos mais sistemáticos
+- Cobertura de difícil avaliação e medição

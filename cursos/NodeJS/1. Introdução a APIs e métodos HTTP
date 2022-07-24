@@ -1,0 +1,36 @@
+Introdução a APIs e métodos HTTP
+
+O que é API
+- Aplication Program interface
+- Pense em API como a camada que esconde as regras e possibilita uma comunicação externa.
+- Facilita muito a Integração
+- Existem várias metodologias (ou arquiteturas), como por exemplo:
+    SOA, Rest, uso por meio de SDK
+
+HTTP Methods
+- Get: Sempre obtém os dados
+- Post: Cria um novo registro ou recurso
+- Put: Atualiza um registro existente
+- Delete: Remove um registro existente
+
+Padrões
+Get: /api/dev/user
+Post: /api/dev/user
+Put: /api/dev/user/{id}
+Delete: /api/dev/user/{id}
+
+Erros comuns
+Get: /api/dev/user/{id}
+Post: /api/dev/user/create
+Put: /api/dev/user
+Delete: /api/dev/user?id=2
+
+Status Code
+- Status comuns:
+    200 = OK
+    401 = Unauthorized
+    403 = Forbidden
+    404 = Not found
+    500 = Internal Server Error
+    504 = Gateway Timeout
+
